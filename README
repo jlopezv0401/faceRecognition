@@ -15,7 +15,6 @@ g++ -I/opt/local/include -L/opt/local/lib -lopencv_core -lopencv_imgproc -lopenc
 Includes in the zip file the original files taken from 
 http://www.shervinemami.co.cc/faceRecognition.html
 
-It has all the files to compile an run under Windows using Visual Studio 2008, but needs to configure the proyect to the Headers and the libraries paths.
+It has all the files to compile and run under Windows using Visual Studio 2008, but needs to configure the proyect to the Headers and the libraries paths.
 
 This version has been modificated to run under Linux and Mac by Jesus Lopez.
-Any comment or question please mail me to charrosnegrosborrrachos@hotmail.com
