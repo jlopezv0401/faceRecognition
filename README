@@ -1,1 +1,21 @@
 Face Recognition
+
+Runs on Mac or Linux
+
+First install OpenCV libraries, make sure that the paths of the .pc files are in the PKG_CONFIG_PATH, so we can use pkg-config command to add and link the OpenCV headears and libraries 
+
+To know the correct path of the headers and libraries use:
+
+pkg-config --cflags --libs opencv
+
+Then use them to compile with g++
+
+g++ -I/opt/local/include -L/opt/local/lib -lopencv_core -lopencv_imgproc -lopencv_highgui -lopencv_ml -lopencv_video -lopencv_features2d -lopencv_calib3d -lopencv_objdetect -lopencv_contrib -lopencv_legacy -lopencv_flann OnlineFaceRec.cpp -o OnlineFaceRec
+
+Includes in the zip file the original files taken from 
+http://www.shervinemami.co.cc/faceRecognition.html
+
+It has all the files to compile an run under Windows using Visual Studio 2008, but needs to configure the proyect to the Headers and the libraries paths.
+
+This version has been modificated to run under Linux and Mac by Jesus Lopez.
+Any comment or question please mail me to charrosnegrosborrrachos@hotmail.com
